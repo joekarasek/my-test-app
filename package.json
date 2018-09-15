@@ -1,0 +1,32 @@
+{
+  "name": "my-test-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "husky": "^0.14.3",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prefoo": "echo 'Rick Says:'",
+    "foo": "echo 'wuba luba dub dub'",
+    "postfoo": "echo 'and morty was shocked'",
+    "lint": "eslint --ext .js,.jsx .",
+    "lint:fix": "eslint --ext .js,.jsx . --fix",
+    "precommit": "yarn run lint",
+    "prepush": "yarn run lint"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}
