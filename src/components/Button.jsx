@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class Button extends Component {
-  render() {
-    return (
-      <button>
-        {this.props.text}
-      </button>
-    );
-  }
+function Button({ text }) {
+  return (
+    <button type="submit">
+      {text}
+    </button>
+  );
 }
 
-Button.propTypes = {};
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default Button;

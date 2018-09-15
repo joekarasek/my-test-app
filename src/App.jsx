@@ -10,7 +10,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1 className="App-title">Welcome to React</h1>
       </header>
-      <Button text="Hi, Click Me!" />
+      <Button text="Hi, Click Me!" type="reset" />
     </div>
   );
 }

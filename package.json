@@ -19,7 +19,7 @@
     "postfoo": "echo 'and morty was shocked'",
     "lint": "eslint --ext .js,.jsx .",
     "lint:fix": "eslint --ext .js,.jsx . --fix",
-    "precommit": "yarn run lint",
+    "precommit": "yarn run lint; exit 0",
     "prepush": "yarn run lint"
   },
   "devDependencies": {
